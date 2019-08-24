@@ -26,13 +26,14 @@ width="600" height="800" alt="graph">
 ### Accuracy and loss
 Performance of a simple cat and dog classification without optimizing the model.
 
+accuracy
 <img 
 src="https://github.com/Taireyune/dCNN-classification-workflow/blob/master/images/accuracy.png" 
-width="800" height="525 alt="accuracy">
+width="600" height="395" alt="accuracy">
 
 <img 
 src="https://github.com/Taireyune/dCNN-classification-workflow/blob/master/images/loss.png" 
-width="800" height="525" alt="loss">
+width="600" height="395" alt="loss">
 
 
 ## GPU and performance
