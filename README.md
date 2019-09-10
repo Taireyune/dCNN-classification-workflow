@@ -5,16 +5,20 @@ discriminator in my current project.
 
 ## Image augmentation 
 Although keras library contains the basic image augmentation tools,
-[I wrote one myself](https://github.com/Taireyune/dCNN-classification-workflow/blob/master/basic_workflow/ImageAugmentation.py)
+[I wrote one myself](https://github.com/Taireyune/dCNN-classification-workflow/blob/master/preprocessing/image_augmentation.py)
 to better understand the image manipulations and parallel processing performance.
 
 ## Model architecture
-The [model](https://github.com/Taireyune/dCNN-classification-workflow/blob/master/basic_workflow/ModelArch.py)
+The [model](https://github.com/Taireyune/dCNN-classification-workflow/blob/master/model/model_arch.py)
 contains elements of batch normalization, residual networks, inception networks,
 and squeeze/excite. Note that in reality, training a network involve using
 the simplest architecture that works or iterate with increasing complexity until
 it works. Here I am just familiarizing with the available tools that have shown
-to work in the literature.
+to work in the literature. 
+The [model_trainer](https://github.com/Taireyune/dCNN-classification-workflow/blob/master/training/model_trainer.py)
+contains commands to run transfer learning using the Xception 
+network trained on imagenet. The performance is a lot better than training from
+scratch
 
 ### Graph
 Here is a section of the graph using tensorboard.
